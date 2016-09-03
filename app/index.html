@@ -26,12 +26,9 @@
         <input type="text" ng-model="multiplier">
         <button ng-click="clear()"> Clear </button>
         <p> {{ buttonValue }} </p>
-        <list-element></list-element>
+        <list-element info="listInfo"></list-element>
         
         
-        
-        
-          
     </div>
   
 
@@ -45,11 +42,11 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <script src="js/directives/listElement.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers/MainController.js"></script>
+    <script src="js/directives/listElement.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

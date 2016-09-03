@@ -7,7 +7,7 @@ app.controller('MainController', ['$scope', function($scope) {
         $scope.buttonValue += 1;
       };
       
-      $scope.multiply = function(multiplierString) {
+      $scope.multiply = function() {
         $scope.buttonValue *= parseInt($scope.multiplier);
       };
       
@@ -15,4 +15,21 @@ app.controller('MainController', ['$scope', function($scope) {
         $scope.buttonValue = 0;
         $scope.multiplier = 1;
       };
+      
+
+      
+      $scope.listInfo = {
+        textField: $scope.textField,
+        savedText: 'cheese',
+        
+        saveText: function () {
+          savedText = 'pizza';
+          console.log(savedText);
+        }
+        
+        
+      };
+      
+       
+      
 }]);

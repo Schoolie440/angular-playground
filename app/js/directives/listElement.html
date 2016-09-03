@@ -1,1 +1,7 @@
-<p>Beans</p>
+<p>Enter data below</p>
+<textarea ng-model='info.textField'  rows="5" cols="35"></textarea>
+<p> {{ info.textField }} </p>
+
+<button ng-click="info.saveText()">Save</button>
+
+<p> {{ info.savedText }} </p>

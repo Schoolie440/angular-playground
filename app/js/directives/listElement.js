@@ -7,5 +7,6 @@ app.directive('listElement', function() {
     },
     templateUrl: 'js/directives/listElement.html'
   };
+  
 });
 
