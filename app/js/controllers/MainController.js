@@ -15,6 +15,4 @@ app.controller('MainController', ['$scope', function($scope) {
         $scope.buttonValue = 0;
         $scope.multiplier = 1;
       };
-
-      
 }]);
