@@ -20,13 +20,15 @@ app.controller('MainController', ['$scope', function($scope) {
       
       $scope.listInfo = {
         textField: $scope.textField,
-        savedText: 'cheese',
         
         saveText: function () {
-          savedText = 'pizza';
-          console.log(savedText);
-        }
+          $scope.listInfo.savedText = $scope.listInfo.textField;
+        },
         
+        clearText: function() {
+          $scope.listInfo.textField = '';
+          $scope.listInfo.savedText = '';
+        }
         
       };
       
